@@ -1,0 +1,28 @@
+{
+    "site": {
+        "title": "Hello World App",
+        "description": "A maintainable Hello World application"
+    },
+    "hero": {
+        "greeting": "Hello, World!",
+        "subtitle": "Welcome to your first application",
+        "description": "This is a production-ready, fully tested, and easily maintainable web application. Edit this file (content.json) to change the text!"
+    },
+    "features": [
+        {
+            "title": "Easy to Maintain",
+            "description": "Change text by editing content.json - no coding required!"
+        },
+        {
+            "title": "Fully Tested",
+            "description": "Unit tests, integration tests, and E2E tests with screenshots"
+        },
+        {
+            "title": "CI/CD Ready",
+            "description": "Automated testing and deployment with GitHub Actions"
+        }
+    ],
+    "footer": {
+        "text": "Built with ❤️ using Next.js"
+    }
+}
