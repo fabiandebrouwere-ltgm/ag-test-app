@@ -52,7 +52,7 @@ describe('Home Page', () => {
     describe('Navigation Links', () => {
         it('renders GitHub link', () => {
             const githubLink = screen.getByRole('link', { name: /view on github/i });
-            expect(githubLink).toHaveAttribute('href', 'https://github.com');
+            expect(githubLink).toHaveAttribute('href', 'https://github.com/fabiandebrouwere-ltgm/ag-test-app');
             expect(githubLink).toHaveAttribute('target', '_blank');
         });
 

@@ -66,7 +66,7 @@ export default function Home() {
         <section className="text-center">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://github.com"
+              href="https://github.com/fabiandebrouwere-ltgm/ag-test-app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105"
