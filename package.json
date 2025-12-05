@@ -15,7 +15,6 @@
     "test:e2e:headed": "playwright test --headed"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.35.6",
     "next": "16.0.7",
     "react": "19.2.0",
     "react-dom": "19.2.0"

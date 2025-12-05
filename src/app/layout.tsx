@@ -1,17 +1,6 @@
 import type { Metadata } from "next";
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
 import { Geist, Geist_Mono } from "next/font/google";
-import ClerkWrapper from "@/components/ClerkWrapper";
 import "./globals.css";
-
-// Force dynamic rendering to ensure Clerk has access to env vars
-export const dynamic = "force-dynamic";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,33 +34,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ClerkWrapper publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
-          <header className="fixed top-0 right-0 z-50 p-6 flex gap-4 items-center">
-            <SignedOut>
-              <SignInButton>
-                <button className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-medium text-sm hover:opacity-90 transition-opacity">
-                  Sign In
-                </button>
-              </SignInButton>
-              <SignUpButton>
-                <button className="px-4 py-2 rounded-full border border-white/20 text-white font-medium text-sm hover:bg-white/10 transition-colors">
-                  Sign Up
-                </button>
-              </SignUpButton>
-            </SignedOut>
-            <SignedIn>
-              <UserButton
-                afterSignOutUrl="/"
-                appearance={{
-                  elements: {
-                    avatarBox: "w-10 h-10 ring-2 ring-purple-500/50 hover:ring-purple-500",
-                  }
-                }}
-              />
-            </SignedIn>
-          </header>
-          {children}
-        </ClerkWrapper>
+        {children}
       </body>
     </html>
   );
