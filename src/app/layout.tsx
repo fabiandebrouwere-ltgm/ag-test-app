@@ -10,6 +10,9 @@ import {
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// Force dynamic rendering to ensure Clerk has access to env vars
+export const dynamic = "force-dynamic";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
